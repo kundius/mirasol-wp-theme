@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Bebas Neue Book';
+  font-display: swap;
+	src: url('../fonts/bebas_neue_book/bebas_neue_book.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/bebas_neue_book/bebas_neue_book.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/bebas_neue_book/bebas_neue_book.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/bebas_neue_book/bebas_neue_book.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/bebas_neue_book/bebas_neue_book.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/bebas_neue_book/bebas_neue_book.svg#bebas_neue_book') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Bebas Neue Regular';
+  font-display: swap;
+	src: url('../fonts/bebas_neue_regular/bebas_neue_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/bebas_neue_regular/bebas_neue_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/bebas_neue_regular/bebas_neue_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/bebas_neue_regular/bebas_neue_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/bebas_neue_regular/bebas_neue_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/bebas_neue_regular/bebas_neue_regular.svg#bebas_neue_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Arial Narrow';
+  font-display: swap;
+	src: url('../fonts/arial_narrow/arial_narrow.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/arial_narrow/arial_narrow.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/arial_narrow/arial_narrow.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/arial_narrow/arial_narrow.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/arial_narrow/arial_narrow.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/arial_narrow/arial_narrow.svg#arial_narrow') format('svg'); /* Chrome < 4, Legacy iOS */
+}
