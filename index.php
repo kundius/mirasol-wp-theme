@@ -8,17 +8,17 @@
 
     <div class="page">
       <?php get_template_part('partials/header') ?>
-
-      <div class="container">
-        <?php if (have_posts()): ?>
-        <h1><?php the_title() ?></h1>
-        <div class="content">
+      
+      <main class="main">
+        <div class="container">
+          <?php if (have_posts()): ?>
+          <h1><?php the_title() ?></h1>
           <?php the_content() ?>
+          <?php else : ?>
+          Результатов не найдено
+          <?php endif; ?>
         </div>
-        <?php else : ?>
-        Результатов не найдено
-        <?php endif; ?>
-      </div>
+      </main>
     
       <?php get_template_part('partials/footer') ?>
     </div>

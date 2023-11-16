@@ -9,9 +9,9 @@
         </a>
       </div>
       <div class="footer-layout__order-and-delivery">
-        <button class="footer-order">
-            <?php echo $data['order_text'] ?>
-        </button>
+        <a href="<?php echo $data['order_link'] ?>" class="footer-order">
+          <?php echo $data['order_text'] ?>
+        </a>
         <div class="footer-delivery">
           <div class="footer-delivery__text">
             <?php echo $data['delivery']['title'] ?>

@@ -27,20 +27,11 @@ add_filter( 'widget_text', 'do_shortcode' );
 
 
 // MENU
-add_theme_support('menus');
+// add_theme_support('menus');
 // add_theme_support( 'automatic-feed-links' );
 // add_theme_support( 'title-tag' );
-add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 1200, 9999 );
-add_image_size( 'post-thumbnail', 390, 280, true );
-
-register_nav_menus([
-    // 'menu-1' => esc_html__( 'Primary', 'mirasol' ),
-    // 'menu-2' => esc_html__( 'Secondary', 'mirasol' ),
-    // 'menu-prices' => esc_html__( 'Prices', 'mirasol' ),
-    // 'menu-social' => esc_html__( 'Social', 'mirasol' ),
-    // 'menu-products' => esc_html__( 'Products', 'mirasol' ),
-]);
+add_theme_support('post-thumbnails');
+add_image_size('product-thumbnail', 9999, 600);
 
 add_theme_support('html5', [
     'search-form',

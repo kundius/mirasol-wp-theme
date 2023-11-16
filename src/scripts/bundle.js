@@ -1,4 +1,11 @@
-import Swiper, { Autoplay, EffectCoverflow, EffectCreative, Pagination, Navigation } from "swiper";
+import Swiper, {
+  Autoplay,
+  EffectCoverflow,
+  EffectCreative,
+  Pagination,
+  Navigation,
+  Thumbs,
+} from "swiper";
 // import HystModal from "hystmodal";
 
 // new HystModal({
@@ -25,11 +32,24 @@ new Swiper(".slideshow .swiper", {
   loop: true,
   autoplay: {
     disableOnInteraction: false,
-    delay: 6000
+    delay: 6000,
   },
   slidesPerView: 1,
-  navigation: {
-    nextEl: ".slideshow .swiper-button-next",
-    prevEl: ".slideshow .swiper-button-prev",
+});
+
+const swiper = new Swiper(".product-gallery__thumbs .swiper", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  direction: "vertical",
+  centeredSlides: true,
+});
+
+const swiper2 = new Swiper(".product-gallery__main .swiper", {
+  modules: [Thumbs],
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
   },
 });

@@ -9,12 +9,12 @@
     <div class="page">
       <?php get_template_part('partials/header') ?>
 
-      <div class="container">
-        <h1>404 Страница не найдена.</h1>
-        <div class="content">
+      <main class="main">
+        <div class="container">
+          <h1>404 Страница не найдена.</h1>
           <p>Ничего не найдено по этому пути. Попробуйте воспользоваться ссылками ниже или поиском.</p>
         </div>
-      </div>
+      </main>
     
       <?php get_template_part('partials/footer') ?>
     </div>
