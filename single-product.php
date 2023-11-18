@@ -52,7 +52,7 @@ $gallery = get_field('gallery') ?: [];
               <h1 class="product__title"><?php the_title() ?></h1>
             </div>
             <div class="product-layout__order">
-              <button class="product__order">
+              <button class="product__order" data-hystmodal="#order">
                 ЗАПРОСИТЬ ЦЕНУ
               </button>
             </div>

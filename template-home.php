@@ -73,7 +73,7 @@ $product = $product_query->get_posts();
                     </a>
                   </div>
                   <div class="catalog-item__order">
-                    <button class="catalog-item__order-button">
+                    <button class="catalog-item__order-button" data-hystmodal="#order">
                       ЗАПРОСИТЬ ЦЕНУ
                     </button>
                   </div>

@@ -70,9 +70,21 @@
   <div class="hystmodal__wrap">
     <div class="hystmodal__window dialog dialog_order" role="dialog" aria-modal="true">
       <button data-hystclose class="hystmodal__close dialog__close">Закрыть</button>
-      <div class="dialog__title">Заказать звонок</div>
+      <div class="dialog__title">Запросить цену</div>
       <div class="dialog__body">
-        <?php echo do_shortcode('[contact-form-7 id="937ca24" title="Заказать звонок"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="e64c52e" title="Запросить цену"]'); ?>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hystmodal" id="calculation" aria-hidden="true">
+  <div class="hystmodal__wrap">
+    <div class="hystmodal__window dialog dialog_calculation" role="dialog" aria-modal="true">
+      <button data-hystclose class="hystmodal__close dialog__close">Закрыть</button>
+      <div class="dialog__title">Заказать расчет</div>
+      <div class="dialog__body">
+        <?php echo do_shortcode('[contact-form-7 id="ec52569" title="Заказать расчет"]'); ?>
       </div>
     </div>
   </div>

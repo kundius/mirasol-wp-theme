@@ -1198,6 +1198,11 @@ body {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 7.632px 4.769px 15.04px 0.96px rgba(0, 0, 0, 0.34);
+  max-width: calc(100% - 30px);
+
+  @include mobile {
+    max-width: 100%;
+  }
 }
 
 .dialog__close {
@@ -1224,9 +1229,17 @@ body {
   min-height: 92px;
   border-radius: 12px 12px 0 0;
   letter-spacing: 0.05em;
+  position: relative;
+  z-index: 5;
+
+  @include mobile {
+    min-height: 76px;
+    font-size: 25px;
+  }
 }
 
 .dialog_callback .dialog__title::before,
+.dialog_calculation .dialog__title::before,
 .dialog_order .dialog__title::before {
   content: '';
   background: url('../images/icon-phone-yellow.png') no-repeat 50% 50%;
@@ -1239,6 +1252,11 @@ body {
 .dialog__body {
   position: relative;
   padding: 35px;
+  z-index: 15;
+
+  @include mobile {
+    padding: 20px;
+  }
 }
 
 .dialog_success .dialog__body {
@@ -1247,9 +1265,14 @@ body {
   color: rgb(63, 62, 62);
   line-height: 1.2;
   padding: 50px;
+
+  @include mobile {
+    font-size: 25px;
+    padding: 20px;
+  }
 }
 
-.dialog_success .dialog__body::before {
+.dialog_success::before {
   content: '';
   background: url('../images/dialog-left-success.png') no-repeat 50% 50%;
   background-size: cover;
@@ -1258,9 +1281,14 @@ body {
   position: absolute;
   left: -162px;
   bottom: -80px;
+  z-index: 10;
+
+  @include mobile {
+    display: none;
+  }
 }
 
-.dialog_success .dialog__body::after {
+.dialog_success::after {
   content: '';
   background: url('../images/dialog-right-success.png') no-repeat 50% 50%;
   background-size: cover;
@@ -1269,10 +1297,16 @@ body {
   position: absolute;
   right: -64px;
   bottom: -80px;
+  z-index: 10;
+
+  @include mobile {
+    display: none;
+  }
 }
 
-.dialog_callback .dialog__body::before,
-.dialog_order .dialog__body::before {
+.dialog_callback::before,
+.dialog_calculation::before,
+.dialog_order::before {
   content: '';
   background: url('../images/dialog-left.png') no-repeat 50% 50%;
   background-size: cover;
@@ -1281,10 +1315,16 @@ body {
   position: absolute;
   left: -155px;
   bottom: 0;
+  z-index: 10;
+
+  @include mobile {
+    display: none;
+  }
 }
 
-.dialog_callback .dialog__body::after,
-.dialog_order .dialog__body::after {
+.dialog_callback::after,
+.dialog_calculation::after,
+.dialog_order::after {
   content: '';
   background: url('../images/dialog-right.png') no-repeat 50% 50%;
   background-size: cover;
@@ -1293,6 +1333,16 @@ body {
   position: absolute;
   right: -97px;
   bottom: 32px;
+  z-index: 10;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.wpcf7 {
+  position: relative;
+  z-index: 2;
 }
 
 .wpcf7-form {
@@ -1300,6 +1350,7 @@ body {
   width: 468px;
   margin: 0 auto;
   position: relative;
+  max-width: 100%;
 }
 
 .wpcf7-form-control-wrap {
@@ -1308,6 +1359,10 @@ body {
 
 .wpcf7-form-control-wrap + .wpcf7-form-control-wrap {
   margin-top: 24px;
+
+  @include mobile {
+    margin-top: 10px;
+  }
 }
 
 .wpcf7-form-control-wrap[data-name="your-name"] {
@@ -1316,6 +1371,10 @@ body {
 
 .wpcf7-form-control-wrap[data-name="your-name"] .wpcf7-form-control.wpcf7-text {
   padding-left: 74px;
+
+  @include mobile {
+    padding-left: 64px;
+  }
 }
 
 .wpcf7-form-control-wrap[data-name="your-name"]::before {
@@ -1329,6 +1388,12 @@ body {
   background: #92af20 url('../images/icon-name.png') no-repeat 50% 50%;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
+
+  @include mobile {
+    width: 46px;
+    height: 46px;
+    background-size: 60% auto;
+  }
 }
 
 .wpcf7-form-control-wrap[data-name="your-email"] {
@@ -1337,6 +1402,10 @@ body {
 
 .wpcf7-form-control-wrap[data-name="your-email"] .wpcf7-form-control.wpcf7-text {
   padding-left: 74px;
+
+  @include mobile {
+    padding-left: 64px;
+  }
 }
 
 .wpcf7-form-control-wrap[data-name="your-email"]::before {
@@ -1350,6 +1419,12 @@ body {
   background: #92af20 url('../images/icon-email.png') no-repeat 50% 50%;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
+
+  @include mobile {
+    width: 46px;
+    height: 46px;
+    background-size: 60% auto;
+  }
 }
 
 .wpcf7-form-control-wrap[data-name="your-tel"] {
@@ -1358,6 +1433,10 @@ body {
 
 .wpcf7-form-control-wrap[data-name="your-tel"] .wpcf7-form-control.wpcf7-text {
   padding-left: 74px;
+
+  @include mobile {
+    padding-left: 64px;
+  }
 }
 
 .wpcf7-form-control-wrap[data-name="your-tel"]::before {
@@ -1371,6 +1450,12 @@ body {
   background: #92af20 url('../images/icon-phone.png') no-repeat 50% 50%;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
+
+  @include mobile {
+    width: 46px;
+    height: 46px;
+    background-size: 60% auto;
+  }
 }
 
 .wpcf7-form-control-wrap[data-name="your-acceptance"] {
@@ -1378,6 +1463,11 @@ body {
   margin-right: -66px;
   display: flex;
   justify-content: center;
+
+  @include mobile {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .wpcf7-form-control.wpcf7-text {
@@ -1390,11 +1480,20 @@ body {
   font-size: 24px;
   color: rgb(146, 175, 32);
   font-family: inherit;
+
+  @include mobile {
+    min-height: 46px;
+    font-size: 20px;
+  }
 }
 
 .wpcf7-form-control.wpcf7-text::placeholder {
   font-size: 24px;
   color: rgb(146, 175, 32);
+
+  @include mobile {
+    font-size: 20px;
+  }
 }
 
 .wpcf7-form-control.wpcf7-textarea {
@@ -1407,11 +1506,20 @@ body {
   font-size: 24px;
   color: rgb(146, 175, 32);
   font-family: inherit;
+
+  @include mobile {
+    min-height: 46px;
+    font-size: 20px;
+  }
 }
 
 .wpcf7-form-control.wpcf7-textarea::placeholder {
   font-size: 24px;
   color: rgb(146, 175, 32);
+
+  @include mobile {
+    font-size: 20px;
+  }
 }
 
 .wpcf7-form-control-wrap[data-name="your-message"] {
@@ -1420,6 +1528,10 @@ body {
 
 .wpcf7-form-control-wrap[data-name="your-message"] .wpcf7-form-control.wpcf7-textarea {
   padding-left: 74px;
+
+  @include mobile {
+    padding-left: 64px;
+  }
 }
 
 .wpcf7-form-control-wrap[data-name="your-message"]::before {
@@ -1433,6 +1545,12 @@ body {
   background: #92af20 url('../images/icon-message.png') no-repeat 50% 50%;
   border-top-left-radius: 8px;
   border-bottom-right-radius: 8px;
+
+  @include mobile {
+    width: 46px;
+    height: 46px;
+    background-size: 60% auto;
+  }
 }
 
 .wpcf7-form-control.wpcf7-acceptance {
@@ -1455,6 +1573,11 @@ body {
     font-size: 18px;
     color: rgb(62, 62, 62);
     line-height: 1;
+
+    @include mobile {
+      font-size: 15px;
+      padding-left: 40px;
+    }
   }
   .wpcf7-list-item-label::before {
     content: '';
@@ -1468,6 +1591,10 @@ body {
     background-repeat: no-repeat;
     border: 2px solid #92af20;
     border-radius: 8px;
+
+    @include mobile {
+      top: 0;
+    }
   }
   input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
     background-image: url("data:image/svg+xml,%3Csvg width='20px' height='20px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 12.6111L8.92308 17.5L20 6.5' stroke='%2392af20' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
@@ -1492,14 +1619,8 @@ body {
   margin-top: 24px;
 
   @include mobile {
-    justify-self: flex-end;
-    padding-right: 26px;
-    padding-left: 26px;
-    line-height: 38px;
-    margin-left: auto;
-    margin-top: 7px;
-    font-size: 20px;
-    letter-spacing: 0.025em;
+    margin-top: 10px;
+    font-size: 25px;
   }
 }
 

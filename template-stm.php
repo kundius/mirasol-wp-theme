@@ -35,7 +35,7 @@ $cards = get_field('cards');
           </div>
 
           <div class="stm-order">
-            <button class="stm-order__button">
+            <button class="stm-order__button" data-hystmodal="#calculation">
               Заказать расчет
             </button>
           </div>

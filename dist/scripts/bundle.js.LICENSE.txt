@@ -1,0 +1,5 @@
+/**
+ * tua-body-scroll-lock v1.4.0
+ * (c) 2023 Evinma, BuptStEve
+ * @license MIT
+ */
