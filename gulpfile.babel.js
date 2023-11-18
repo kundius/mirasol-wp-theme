@@ -20,7 +20,7 @@ const sass = gulpSass(dartSass);
 export const stylesTask = () => {
   return src([
     "node_modules/normalize.css/normalize.css",
-    // "node_modules/hystmodal/dist/hystmodal.min.css",
+    "node_modules/hystmodal/dist/hystmodal.min.css",
     "node_modules/swiper/swiper-bundle.min.css",
     // "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
     // "node_modules/@fortawesome/fontawesome-free/css/all.min.css",

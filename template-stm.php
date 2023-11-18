@@ -18,7 +18,7 @@ $cards = get_field('cards');
       <main class="stm-main">
         <div class="container">
           <h1 class="stm-title">
-            <?php the_title() ?>
+            <?php echo (get_field('title') ?: get_the_title()) ?>
           </h1>
 
           <div class="stm-cards">

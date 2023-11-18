@@ -1,29 +1,9 @@
-import Swiper, {
-  Autoplay,
-  EffectCoverflow,
-  EffectCreative,
-  Pagination,
-  Navigation,
-  Thumbs,
-} from "swiper";
-// import HystModal from "hystmodal";
+import Swiper, { Autoplay, Navigation, Thumbs } from "swiper";
+import HystModal from "hystmodal";
 
-// new HystModal({
-//   linkAttributeName: "data-hystmodal",
-// });
-
-// new Swiper(".nav-slider .swiper", {
-//   modules: [Navigation],
-//   speed: 500,
-//   spaceBetween: 6,
-//   loop: true,
-//   // grabCursor: true,
-//   slidesPerView: "auto",
-//   navigation: {
-//     nextEl: ".nav-slider-button-next",
-//     prevEl: ".nav-slider-button-prev",
-//   },
-// });
+const modal = new HystModal({
+  linkAttributeName: "data-hystmodal",
+});
 
 new Swiper(".slideshow .swiper", {
   modules: [Navigation, Autoplay],
@@ -53,3 +33,11 @@ const swiper2 = new Swiper(".product-gallery__main .swiper", {
     swiper: swiper,
   },
 });
+
+document.addEventListener('wpcf7submit', function(event) {
+  event.target.classList.remove('sent');
+  event.target.classList.remove('failed');
+  event.target.classList.add('init');
+
+  modal.open('#success');
+}, false);

@@ -16,6 +16,7 @@
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^9.0.1",
@@ -24,10 +25,10 @@
     "sass": "^1.49.11",
     "vinyl-named": "^1.1.0",
     "webpack-stream": "^7.0.0",
-    "gulp-concat": "^2.6.1",
     "yargs": "^17.4.0"
   },
   "dependencies": {
+    "hystmodal": "^1.0.1",
     "normalize.css": "^8.0.1",
     "swiper": "^8.4.4"
   }

@@ -53,3 +53,40 @@
     </div>
   </div>
 </footer>
+
+<div class="hystmodal" id="callback" aria-hidden="true">
+  <div class="hystmodal__wrap">
+    <div class="hystmodal__window dialog dialog_callback" role="dialog" aria-modal="true">
+      <button data-hystclose class="hystmodal__close dialog__close">Закрыть</button>
+      <div class="dialog__title">Заказать звонок</div>
+      <div class="dialog__body">
+        <?php echo do_shortcode('[contact-form-7 id="937ca24" title="Заказать звонок"]'); ?>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hystmodal" id="order" aria-hidden="true">
+  <div class="hystmodal__wrap">
+    <div class="hystmodal__window dialog dialog_order" role="dialog" aria-modal="true">
+      <button data-hystclose class="hystmodal__close dialog__close">Закрыть</button>
+      <div class="dialog__title">Заказать звонок</div>
+      <div class="dialog__body">
+        <?php echo do_shortcode('[contact-form-7 id="937ca24" title="Заказать звонок"]'); ?>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hystmodal" id="success" aria-hidden="true">
+  <div class="hystmodal__wrap">
+    <div class="hystmodal__window dialog dialog_success" role="dialog" aria-modal="true">
+      <button data-hystclose class="hystmodal__close dialog__close">Закрыть</button>
+      <div class="dialog__title">Спасибо за заявку!</div>
+      <div class="dialog__body">
+        Мы свяжесмя с вами<br />
+        в самое ближайшее время!
+      </div>
+    </div>
+  </div>
+</div>
