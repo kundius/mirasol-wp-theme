@@ -34,10 +34,10 @@
       <div class="footer-layout__contacts">
         <div class="footer-contacts">
           <div class="footer-contacts__item footer-contacts__item_phone">
-            <a href="tel:<?php echo $data['phone'] ?>"><?php echo $data['phone'] ?></a>
+            <a href="tel:<?php echo $data['phone'] ?>" target="_blank"><?php echo $data['phone'] ?></a>
           </div>
           <div class="footer-contacts__item footer-contacts__item_email">
-            <a href="mailto:<?php echo $data['email'] ?>"><?php echo $data['email'] ?></a>
+            <a href="mailto:<?php echo $data['email'] ?>" target="_blank"><?php echo $data['email'] ?></a>
           </div>
         </div>
       </div>
