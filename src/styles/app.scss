@@ -1281,7 +1281,7 @@ body {
   position: absolute;
   left: -162px;
   bottom: -80px;
-  z-index: 10;
+  z-index: 9;
 
   @include mobile {
     display: none;
@@ -1297,7 +1297,7 @@ body {
   position: absolute;
   right: -64px;
   bottom: -80px;
-  z-index: 10;
+  z-index: 9;
 
   @include mobile {
     display: none;
@@ -1315,7 +1315,7 @@ body {
   position: absolute;
   left: -155px;
   bottom: 0;
-  z-index: 10;
+  z-index: 9;
 
   @include mobile {
     display: none;
@@ -1333,7 +1333,7 @@ body {
   position: absolute;
   right: -97px;
   bottom: 32px;
-  z-index: 10;
+  z-index: 9;
 
   @include mobile {
     display: none;
