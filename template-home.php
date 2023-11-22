@@ -28,7 +28,9 @@ $product = $product_query->get_posts();
               <div class="swiper-wrapper">
                 <?php foreach ($slideshow as $item): ?>
                 <div class="swiper-slide">
-                  <img src="<?php echo $item['image']['url'] ?>" alt="<?php echo $item['image']['title'] ?>">
+                  <a href="<?php echo $item['link'] ?>">
+                    <img src="<?php echo $item['image']['url'] ?>" alt="<?php echo $item['image']['title'] ?>">
+                  </a>
                 </div>
                 <?php endforeach ?>
               </div>
