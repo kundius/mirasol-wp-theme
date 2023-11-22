@@ -645,6 +645,11 @@ body {
   align-items: center;
 }
 
+.footer-contacts__item a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .footer-contacts__item::before {
   content: '';
   flex-shrink: 0;
