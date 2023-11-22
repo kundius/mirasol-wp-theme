@@ -14,6 +14,10 @@ new Swiper(".slideshow .swiper", {
     disableOnInteraction: false,
     delay: 6000,
   },
+  navigation: {
+    nextEl: ".slideshow .swiper-button-next",
+    prevEl: ".slideshow .swiper-button-prev",
+  },
   slidesPerView: 1,
 });
 
